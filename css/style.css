@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+h1 {font-size: large;}
+h2 {font-size: larger;}
+h3 {font-size: medium; margin: 20px 0;}
+
+.container-half {
+    width: 40%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+    width: 1440px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.slider {
+	width: auto;
+    height: 500px;
+    background-image: url('../img/fintech.webp');
+    background-size: cover;
+}
+
+.absolute {
+    position: absolute;
+}
+.tl-200 {
+    top: 200px;
+    left: 100px;
+}
+.texto-slide h1 {
+    top: 200px;
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    left: 100px;
+}
+.texto-slide h2 {
+    top: 200px;
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    left: 100px;
+}
+.relative {
+    position: relative;
+}
+
+.columna {
+    width:33%;
+    float:left;
+    margin: 20px 0;
+}
+.columna h2, p {
+    text-align: center;
+    line-height: 24px;
+    margin: 30px;
+    color: black;
+}
+.columna img {
+    width: 250px;
+    height: auto;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+}
+.columna-nosotros {
+    width:100%;
+    float:left;
+    display: flex;
+    padding: 50px;
+}
+
+.gris {
+    background-color: rgb(231, 231, 231);
+    padding: 50px 0;
+}
+.blanco {
+    background-color: #fff;
+    padding: 50px 0;
+}
+.black {
+    background-color: black;
+    padding: 50px 0;
+}
+.black p, strong {
+    color: #fff !important;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 9999;
+}
+.nav {
+    width: 100%;
+    height: 50px;
+    margin:0;
+    background-color: #070833;
+}
+.nav ul {
+    list-style: none;
+    float: right;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a{
+    display: block;
+    padding: 15px 20px;
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.menu li a:hover{
+    color: #f1f3f5;
+    transition: all .3s;
+}
+.submenu {
+    position:absolute;
+    background-color: #333333;
+    width: 120%;
+    display: none;
+}
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+ 
+input {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin:5px 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+textarea {
+    width: 100%;
+}
+
+.iconofooter {
+    width: 50px;
+    height: auto;
+}
+.btn-whatsapp {
+    display:block;
+    width:60px;
+    height:60px;
+    color:#fff;
+    position: fixed;
+    right:30px;
+    bottom:50px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+    overflow: hidden;
+}
+.btn-whatsapp img {
+    width: 100%;
+    height: auto;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+}
+.whatsapp:hover {
+    color: #25D366;
+    text-decoration: none;
+}
+.instagram:hover {
+    color: #E1306C;
+    text-decoration: none;
+}
+.facebook:hover {
+    color: #4267B2;
+    text-decoration: none;
+}
+.twitter:hover {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+ .center {
+    align-items: center;
+    text-align: center;
+ }
+ i {
+    font-size: 50px;
+    margin: 10px;
+    color: #fff;
+ }
