@@ -79,7 +79,7 @@ h3 {font-size: medium; margin: 20px 0;}
 .relative {
     position: relative;
 }
-
+/* 
 .columna {
     width:33%;
     float:left;
@@ -103,7 +103,7 @@ h3 {font-size: medium; margin: 20px 0;}
     float:left;
     display: flex;
     padding: 50px;
-}
+} */
 
 .gris {
     background-color: rgb(231, 231, 231);
