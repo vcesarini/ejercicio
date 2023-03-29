@@ -6,11 +6,27 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Practico Integrador</title>
       <link href="css/style.css" rel='stylesheet' type='text/css' />
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
       <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark">
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Simple header</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+      <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark">
          <a class="navbar-brand" href="#">
          <img src="img/logo.png" width="100%" height="auto" class="d-inline-block align-top" alt="" style="max-width: 560px;">
          </a>
@@ -41,7 +57,7 @@
                </li>
             </ul>
          </div>
-      </nav>
+      </nav> -->
       <section id="inicio" class="container-fluid">
          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -82,8 +98,35 @@
             </a>
          </div>
       </section>
+      
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="px-4 py-5 my-5 text-center">
+          <img class="d-block mx-auto mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+          <h1 class="display-5 fw-bold">Centered hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       <section id="servicios" class="container-fluid">
          <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h1>What is Lorem Ipsum?</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
             <div class="row row-cols-1 row-cols-md-3">
                <div class="col mb-4">
                   <div class="card h-100">
@@ -115,8 +158,14 @@
             </div>
          </div>
       </section>
-      <section id="nosotros" class="container-fluid bg-danger">
+      <section id="nosotros" class="container-fluid bg-info">
          <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h1>What is Lorem Ipsum?</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
             <div class="row no-gutters bg-light position-relative my-2">
                <div class="col-md-4 mb-md-0 p-md-4">
                   <img src="https://placeholder.com/333x200" class="w-100" alt="...">
@@ -159,48 +208,56 @@
       <section id="contacto" class="container-fluid gris">
          <div class="container">
             <div class="row justify-content-center">
-               <form class="col-6">
-                  <div class="form-group">
-                     <label for="exampleInputEmail1">Email address</label>
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
                   </div>
-                  <div class="form-group">
-                     <label for="exampleInputPassword1">Password</label>
-                     <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-               </form>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="email*">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+              
             </div>
          </div>
       </section>
+
       <div class="btn-whatsapp">
          <a href="https://wa.link/ofhztw" target="_blank">
          <img src="img/whatsapp-icon.png" alt="" data-no-retina="">
          </a>
       </div>
-      <footer class="container-fluid black">
-         <div class="container">
-            <p>Armenia 2384, Palermo, Buenos Aires</p>
-            <hr>
-            <p><strong>telefono: 1156548200</strong></p>
-            <p><strong><a href="mailto:smartsystem@system.com" target="_blank" style="color: #fff; text-decoration: none;">mail: smartsystem@system.com</a></strong></p>
-            <a href="#inicio">
-               <p>Inicio<i class="las la-arrow-circle-up"></i>
-               </p>
-            </a>
-         </div>
-         <div class="redes center">
-            <a href="https://wa.link/ofhztw" target="_blank" alt="Whatsapp" title="Whatsapp"><i class="lab la-whatsapp whatsapp"></i></a>
-            <a href="https://instagram.com/" target="_blank" alt="Instagram" title="Instagram"><i class="lab la-instagram instagram"></i></a>
-            <a href="https://facebook.com/" target="_blank" alt="Facebook" title="Facebook"><i class="lab la-facebook facebook"></i></a>
-            <a href="https://twitter.com/" target="_blank" alt="Twitter" title="Twitter"><i class="lab la-twitter twitter"></i></a>
-         </div>
-      </footer>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-   </body>
+      <script src="js/script.js" type="script"></script>
+    </body>
 </html>
