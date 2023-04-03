@@ -69,7 +69,7 @@ btn_final.addEventListener("click", function(e){
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
-  alert("aqui finaliza el registro");
+  alert("Gracias por registrarte");
 });
 btn_atras1.addEventListener("click", function(e){
     
