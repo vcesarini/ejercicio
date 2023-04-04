@@ -22,37 +22,52 @@ btn_adelante2.addEventListener("click", function(e){
     e.preventDefault();
     
     var nombre=document.getElementById("nombres").value;
-
+    var apellido=document.getElementById("apellido").value;
     
     /* Control de errores */
 
-    if(nombre==""){
+    if(nombre ==""){
 document.getElementById("nombres-error").innerHTML="este campo no puede quedar vacio."
 document.getElementById("nombres").style.borderColor="red";
+    }else if( apellido ==""){
+document.getElementById("apellido-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("apellido").style.borderColor="red";
     }else{
         document.getElementById("nombres-error").innerHTML=""
         document.getElementById("nombres").style.borderColor="lightgrey";
-        
+        document.getElementById("apellido-error").innerHTML=""
+        document.getElementById("apellido").style.borderColor="lightgrey";  
     movPag.style.marginLeft="-25%";
     /* movimiento de progress bar */ 
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
+    }
 }
-});
+
+     
+);
   
 
 
 btn_adelante3.addEventListener("click", function(e){
     
     e.preventDefault();
+    var sexo=document.getElementById("sexo").value;
+    if(sexo == -1){
+        document.getElementById("sexo-error").innerHTML="este campo no puede quedar vacio."
+        document.getElementById("sexo").style.borderColor="red";
+            }else{
+                document.getElementById("sexo-error").innerHTML=""
+                document.getElementById("sexo").style.borderColor="lightgrey";
+               
     movPag.style.marginLeft="-50%"; 
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
-});
+}});
 btn_adelante4.addEventListener("click", function(e){
     
     e.preventDefault();
