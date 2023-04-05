@@ -10,6 +10,7 @@
    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 
@@ -124,6 +125,12 @@
 </div>
 </section>
 
+<div id="app">
+   <div id="response">
+       <!-- aqui va la respuesta que hace en el ajax, llamada a la API -->
+   </div>
+</div>
+
    <section id="servicios" class="container-fluid bg-info">
       <div class="container my-5">
          <div class="px-4 pt-2 my-5 text-center">
@@ -162,142 +169,6 @@
             </div>
          </div>
       </div>
-   </section>
-
-   <section>
-      <div>
-         <a href="", class="btn-cancelar" title="Cancelar registro">X</a>
-     </div>
-         <div class="container">
-         <header>Registro de usuario</header>
-         <div class="progress-bar">
-             <div class="paso">
-                 <p>Informacion Principal</p>
-                 <div class="num">
-                     <span>1</span>
-                     <div class="check fa fa-check"></div>
-                 </div>
-             </div>
-             <div class="paso">
-                 <p>Datos Personales</p>
-                 <div class="num">
-                     <span>2</span>
-                     <div class="check fa fa-check"></div>
-                 </div>
-             </div>
-             <div class="paso">
-                 <p>Informacion de Contacto</p>
-                 <div class="num">
-                     <span>3</span>
-                     <div class="check fa fa-check"></div>
-                 </div>
-             </div>
-             <div class="paso">
-                 <p>Inicio de seccion</p>
-                 <div class="num">
-                     <span>4</span>
-                     <div class="check fa fa-check"></div>
-                 </div>
-             </div>
-         </div>
-         <div class="form-princ">
-             
-     
-         <form action="#">
-             
-             <div class="pagina movPag">
-             <div class="titulo">Informacion principal</div>
-             <div class="campo">
-     <div class="label">Nombres: <b class="error" id="nombres-error"></b></div>
-     <input type="text" id="nombres" placeholder="Nombres">
-     </div>
-             <div class="campo">
-             <div class="label">Apellido Paterno: <b class="error" id="apellido1-error"></b></div>
-             <input type="text" id="apellido1" placeholder="Apellido Paterno">
-         </div>
-             <div class="campo">
-             <div class="label">Apellido Materno: <b class="error" id="apellido2-error"></b></div>
-             <input type="text" id="apellido2" placeholder="Apellido Materno">
-         </div>
-             <div class="campo sigPag"style="margin-bottom: 12px;">
-            
-       
-             <button >Siguiente</button>
-         </div>
-     
-         </div>
-      
-         <div class="pagina movPag">
-         <div class="titulo">Informacion Secundaria</div>
-         <div class="campo">
-     <div class="label">Fecha nacimiento : <b class="error" id="FechaNac-error"></b></div>
-     <input type="Date" id="FechaNac" max="2010-12-31" value="2010-02-03">
-     </div>
-         <div class="campo">
-         <div class="label">Sexo: <b class="error" id="sexo-error"></b></div>
-        <select name="sexo" id="sexo">
-        <option value="-1" disabled selected>Escoge una opcion</option>
-        <option value="0">Masculino</option>
-        <option value="1">Femenino</option>
-        <option value="2">Sin Especificar</option>
-     </select>
-     </div>
-         
-         <div class="campo btns">
-         <div class="label"></div>
-         <button class="volver-pag1 volver">Atras</button>
-         <button class="adelante-pag3 adelante">Siguiente</button>
-     </div>
-     
-     </div>
-     
-     <div class="pagina">
-     <div class="titulo">Informacion de contacto</div>
-     <div class="campo">
-     <div class="label">E-mail: <b class="error" id="Email-error"></b></div>
-     <input type="text" id="Email" placeholder="E-mail">
-     </div>
-     <div class="campo">
-     <div class="label">Numero telefonico: <b class="error" id="NumCel-error"></b></div>
-     <input type="text" id="NumCel" placeholder="Numero telefonico">
-     </div>
-     
-     <div class="campo btns">
-     
-     
-     <button  class="volver-pag2 volver">Atras</button>
-     <button class="adelante-pag4 adelante">Siguiente</button>
-     </div>
-     </div>
-     
-     <div class="pagina">
-     <div class="titulo">Informacion de inicio sesion</div>
-     <div class="campo">
-     <div class="label">Nombre de usuario: <b class="error" id="usuario-error"></b></div>
-     <input type="text" id="usuario" placeholder="Nombre de usuario">
-     </div>
-     <div class="campo">
-     <div class="label">Contraseña: <b class="error" id="Contra-error"></b></div>
-     <span class="ojitos"onclick="mostrarContra()">
-         <i id ="mostrar" class ="fa fa eye" title="Mostrar Contraseña"></i>
-         <i id="Ocultar" class="fa fa fa-eye-slash" title="Ocultar Contraseña"></i>
-     </span>
-     <input type="password" id="Contra" placeholder="Contraseña">
-     </span>
-     </div>
-     
-     <div class="campo btns">
-     <div class="label"></div>
-     
-     <button class="volver-pag3 volver">Atras</button>
-     <button class="fin">Finalizar</button>
-     </div>
-     
-     </div>
-         </form>
-     
-     </div>
-     </div>
    </section>
 
    <section id="nosotros" class="container-fluid bg-danger">
@@ -390,7 +261,6 @@
 </div>
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
    
