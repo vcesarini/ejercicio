@@ -7,7 +7,7 @@ const btn_atras2=document.querySelector(" .volver-pag2");
 
 const btn_atras3=document.querySelector(" .volver-pag3");
 const btn_final=document.querySelector(" .fin");
-
+const cancelar = document.querySelector(".btn-cancelar");
 const progressText= document.querySelectorAll(" .paso p");
 const progressCheck= document.querySelectorAll(" .paso .check");
 const Num= document.querySelectorAll(" .paso .num");
@@ -16,6 +16,24 @@ const Num= document.querySelectorAll(" .paso .num");
 
 let max=4;
 let cont=1
+
+cancelar.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    Swal.fire({
+      title: '¿Estás seguro de querer salir?',
+      text: "Se perderán los datos, si es que ya llenó algunos.",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, deseo salir.'
+    }).then((result) => {
+      if (result.value) {
+        location.href="index.html"
+      }
+    })
+  });
   //botones de avance
 btn_adelante2.addEventListener("click", function(e){
   
