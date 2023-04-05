@@ -1,181 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
-
-html {
-    scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
 }
-h1 {font-size: large;}
-h2 {font-size: larger;}
-h3 {font-size: medium; margin: 20px 0;}
-
-.slider {
-	width: auto;
-    height: 500px;
-    background-image: url('../img/fintech.webp');
+p {
+    font-size: 16px;
+}
+#banner h1 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+#banner h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+#sumate h2, #bg-secundario h2 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+h3 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+h6 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+}
+.bg-pink {
+    background-color: #E21982;
+}
+.pink {
+    color: #E21982;
+}
+.bg-dark-blue {
+    background-color: #22193F;
+}
+.dark-blue {
+    color: #22193F;
+}
+.bg-gris {
+    background-color: #e8e8e8;
+}
+.bg-img {
+    background-image: url('../img/banner-principal.jpg');
+    background-color: #22193F;
+    background-repeat: no-repeat;
     background-size: cover;
 }
-.logo {
-    margin-left: 100px;
+.bg-secundario {
+    background-image: url('../img/banner-secundario.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 430px;
+    position: relative;
 }
-.absolute {
+.banner-content {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+.titulo {
+    font-weight: 900;
+    font-size: 28px;
+    color: #22193F;
 }
-.tl-200 {
-    top: 200px;
-    left: 100px;
-}
-.texto-slide h1 {
-    top: 200px;
+.btn-cta {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #E21982;
     color: #fff;
-    text-align: left;
-    font-size: 40px;
-    left: 100px;
+    border-radius: 50px;
+    padding: 5px 30px;
 }
-.texto-slide h2 {
-    top: 200px;
+.btn-cta:hover {
     color: #fff;
-    text-align: left;
-    font-size: 20px;
-    left: 100px;
+    background-color: #22193F;
 }
-.relative {
-    position: relative;
+.btn-sumate {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    padding: 5px 30px;
 }
-/* 
-.columna {
-    width:33%;
-    float:left;
-    margin: 20px 0;
+.btn-sumate:hover {
+    color: #fff;
+    background-color: #22193F;
 }
-.columna h2, p {
-    text-align: center;
-    line-height: 24px;
-    margin: 30px;
-    color: black;
-}
-.columna img {
-    width: 250px;
-    height: auto;
-    border-radius: 16px;
-    text-align: center;
-    align-items: center;
-}
-.columna-nosotros {
-    width:100%;
-    float:left;
-    display: flex;
-    padding: 50px;
-} */
-
-.gris {
-    background-color: rgb(231, 231, 231);
-    padding: 50px 0;
-}
-.blanco {
-    background-color: #fff;
-    padding: 50px 0;
-}
-.black {
-    background-color: black;
-    padding: 50px 0;
-}
-.black p, strong {
-    color: #fff !important;
-}
-
-.fixed {
-    position: fixed;
-    z-index: 9999;
-}
-
-
-.menu > li{
-    position: relative;
-    display: inline-block;
-}
-
-.menu>li>a{
-    display: block;
-    padding: 15px 20px;
-    font-family: "montserrat", Arial, Helvetica, sans-serif;
+.txt-pass {
+    color: #E21982;
     text-decoration: none;
-    color: #fff;
-    font-weight: 600;
+    font-size: 14px;
+    float: right;
+    margin-top: 10px;
 }
-.menu li a:hover{
-    color: #f1f3f5;
-    transition: all .3s;
-}
-.submenu {
-    position:absolute;
-    background-color: #0e1174;
-    width: 120%;
-    display: none;
-}
-.submenu li a {
-    display: block;
-    padding: 15px;
-    color: #fff;
-    font-family: "montserrat", Arial, Helvetica, sans-serif;
+.txt-pass a {
+    color: #E21982;
     text-decoration: none;
 }
-.submenu li a:hover {
-    color: #070833;
+#como-funciona h5 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #E21982;
 }
-.menu li:hover .submenu{
-    display: block;
+#como-funciona .card {
+    border: 0;
 }
-
-label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
- 
-input {
+#como-funciona img {
     width: 100%;
-    height: 30px;
-    padding: 0;
-    margin:5px 0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    *overflow: hidden;
+    height: 100%;
+    max-width: 100px;
 }
-textarea {
-    width: 100%;
+.accordion-item {
+    margin: 10px 0;
 }
-
-.iconofooter {
-    width: 50px;
-    height: auto;
+.accordion-header button {
+    font-weight: 700;
+    font-family: 'Nunito', Arial, sans-serif;
 }
-.btn-whatsapp {
-    display:block;
-    width:60px;
-    height:60px;
-    color:#fff;
-    position: fixed;
-    right:30px;
-    bottom:50px;
-    border-radius:50%;
-    line-height:80px;
-    text-align:center;
-    z-index:999;
-    overflow: hidden;
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item {
+    border-radius: 10px !important;
 }
-.btn-whatsapp img {
-    width: 100%;
-    height: auto;
+.iconos {
+    color:#6A2A83;
 }
-
 .redes a {
     color: white;
     text-decoration: none;
@@ -196,216 +161,50 @@ textarea {
     color: #1DA1F2;
     text-decoration: none;
 }
-
- .center {
-    align-items: center;
-    text-align: center;
- }
- i {
-    font-size: 50px;
+i {
+    font-size: 30px;
     margin: 10px;
-    color: #fff;
  }
-
- /* ESTILOS FORM WIZARD */
-
-.btn-cancelar{
-padding: 5px 10px;
-background: grey;
-color: white;
-border-radius: 50%;
-font-size: 12px;
-font-weight: bold;
-text-decoration: none;
-float: right;
-}
-
-.form-princ{
-    width:100% ;
-    overflow: hidden;
-
-}
-.form-princ form{
-    display:flex;
-    width: 400%;
-}
-.form-princ form .pagina{
-width: 25%;
-transition: margin-left 0.3s ease-in-out;
-}
-.form-princ .pagina .titulo{
-text-align: left;
-font-size: 20px;
-font-weight: 500;
-}
-.form-princ .form .pagina .campo{
-height: 35px;
-width: 350px;
-margin: 40px 0;
-display: flex;
-position: relative;
-}
-
-.form-princ .form .pagina .campo .label{
-position: absolute;
-top: -30px;
-font-weight: 500;
-font-size: 14px;
-font-style: italic;
-float: left;
-text-align:left;
-width: 100%;
-}
-.form-princ .form .pagina .campo .input{
-width: 100%;
-height: 100%;
-border:1px solid lightgrey ;
-border-radius: 5px;
-font-size:16px;
-padding-left :15px;
-                                                                            
-}
-.form-princ .form .pagina .campo .select{
-width: 100%;
-padding-left: 10px;
-font-size: 17px;
-font-weight: 500;
-border-radius: 5px;
-border:1px solid lightgrey ;
-
-}
-.form-princ .form .pagina .campo .button{
-width: 100%;
-height: calc (100%+5px);
-margin-top:-20px;
-border: none;
-background: #0E2C48;
-color: #FFF;
-font-size: 18px;
-font-weight:500 ;
-letter-spacing: 1px;
-text-transform:uppercase ;
-cursor:pointer;
-transition:0.3 ease ;
-
-}
-.form-princ .form .pagina .campo .hover{
-background: #DB2A31;
-
-}
-.form-princ .form .pagina .btns .button{
-        margin-top:-20px!important;
-}
-form .pagina .btns .button .volver{
-    margin-right:3px;
-    font-size: 17px;
-}
-form.pagina .btns .button .adelante{
-    margin-left: 3px;
-}
-.progress-bar{
-    display: flex;
-    margin: 40px 0;
-    flex-direction: inherit !important;
-}
-.progress-bar .paso{
-    text-align: center;
-    width: 100%;
-    position: relative;
-}
-.progress-bar .paso p{
-font-size: 18px;
-font-weight:500 ;
-color:black;
-margin-bottom: 8px;
-transition: 0.2s;
-}
-.progress-bar .paso p.active{
-    color: #DB2A31;
-} 
-.progress-bar .paso .num{
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border: 2px solid black;
-    border-radius: 50%;
-    display:inline-block;
-    font-weight:500 ;
-    font-size: 17px;
-    line-height:25px ;
-    transition: 0.2s;
-}   
-.progress-bar .paso .num.num.active{
-border-color: red;
-background: #DB2A31;
-}
-.progress-bar .paso .num span{
-font-weight: 500;
-font-size:17px ;
-line-height: 25px;
-position:absolute  ;
-left: 50%;
-transform: translateX(-50%);
-}
-.progress-bar .paso .num.active span{
-display: none;
-}
-.progress-bar .paso .check{
-display: none;
-position: absolute;
-left: 50%;
-top: 70%;
-font-size: 15px;
-transform: translate(-50%,-50%);
-}
-.progress-bar .paso .check.active{
-display: block ;color: white;
-}
-.progress-bar .paso .num::before ,
-.progress-bar .paso .num::after{
-    position: absolute;
-    content: "";
-    width: 44px;
-    height: 3px;
-    bottom: 11px;
-    right: -53px;
-    background: black;
-}
-.progress-bar .paso:last-child .num:before ,
-.progress-bar .paso:last-child .num:after{
-    display: none;
-}
-.progress-bar .paso .num.active:after{
-    background: red;
-    animation: mov_Linea 0.3s linear forwards;
-    transform: scaleX(0);
-    transform-origin:left ;
-}
-@keyframes mov_Linea{
-    100%{
-        transform: scaleX(1);
+ #footer p {
+    font-size: 14px;
+ }
+ #copyright p {
+    font-size: 12px;
+ }
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 425px) {
+    .height-100vh {
+        height: 50vh;
     }
+    #faqs img {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+ } 
 
-}
-.ojitos{
-    position: absolute;
-    top: 29%;
-    right: 7px;
-    font-size: 20px;
-    color: #0E2C48; 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .height-100vh {
+        height: 50vh;
+    }
+    #faqs img {
+        width: 80%;
+        height: auto;
+        margin-top: 0;
+        text-align: right;
+    }
+ } 
 
-}
-#ocultar{
-    display: none;
-}
-#mostrar , #ocultar{
-    cursor: pointer;
-}
-
-/*estilos para mostrar el mensaje de error */
-
-.error{
-    color:#DB2A31;
-    float:right;
-    text-align: right;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .height-100vh {
+        height: 100vh;
+    }
+    #faqs img {
+        width: 80%;
+        height: auto;
+        margin-top: 0;
+        text-align: right;
+    }
 }

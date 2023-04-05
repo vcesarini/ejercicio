@@ -1,163 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Practico Integrador</title>
-      <link href="css/style.css" rel='stylesheet' type='text/css' />
-      <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 11 - Booststrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+</head>
+<body>
 
-      <section id="registro" class="container-fluid gris">
-         <div class="container">
-            <div class="row justify-content-center">
+<header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+    <img src="img/logo.svg">
+    </a>
 
-               <div class="col-12">
-                  <a href="" class="btn-cancelar" title="Cancelar registro">X</a>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <li><a href="#quienes-somos" class="nav-link px-2 link-dark">Quienes somos</a></li>
+    <li><a href="#como-funciona" class="nav-link px-2 link-dark">Cómo funciona</a></li>
+    <li><a href="#faqs" class="nav-link px-2 link-dark">FAQS</a></li>
+    </ul>
 
-                  <h3>Registro de usuario</h3>
-                  <div class="progress-bar">
-                     <div class="paso">
-                        <p>Informacion principal</p>
-                        <div class="num">
-                           <span>1</span>
-                           <div class="check fa fa-check"></div>
-                        </div>
-                     </div>
-                     <div class="paso">
-                        <p>Datos Personales</p>
-                        <div class="num">
-                           <span>2</span>
-                           <div class="check fa fa-check"></div>
-                        </div>
-                     </div>
-                     <div class="paso">
-                        <p>Informacion de Contacto</p>
-                        <div class="num">
-                           <span>3</span>
-                           <div class="check fa fa-check"></div>
-                        </div>
-                     </div>
-                     <div class="paso">
-                        <p>Inicio de seccion</p>
-                        <div class="num">
-                           <span>4</span>
-                           <div class="check fa fa-check"></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="form-princ">
-                     <form action="#">
-                        <div class="pagina movPag">
-                           <div class="titulo">Informacion principal</div>
-                           <div class="campo">
-                              <div class="label">Nombre: <b class="error" id="nombres-error"></b></div>
-                              <input type="text" id="nombres" placeholder="nombre" required>
-                           </div>
-                           <div class="campo">
-                              <div class="label">Apellido: <b class="error" id="apellido-error"></b></div>
-                              <input type="text" id="apellido" placeholder="apellido" required>
-                           </div>
-                           <!-- <div class="campo">
-                              <div class="label">Apellido Materno: <b class="error" id="apellido2-error"></b></div>
-                              <input type="text" id="apellido2" placeholder="Apellido Materno">
-                              </div> -->
-                           <div class="campo sigPag"style="margin-bottom: 12px;">
-                              <button >Siguiente</button>
-                           </div>
-                        </div>
-                        <div class="pagina movPag">
-                           <div class="titulo">Informacion Secundaria</div>
-                           <div class="campo">
-                              <div class="label">Fecha nacimiento : <b class="error" id="FechaNac-error"></b></div>
-                              <input type="Date" id="FechaNac" max="2010-12-31" value="2010-02-03">
-                           </div>
-                           <div class="campo">
-                              <div class="label">Sexo: <b class="error" id="sexo-error"></b></div>
-                              <select name="sexo" id="sexo">
-                                 <option value="-1" disabled selected>Escoge una opcion</option>
-                                 <option value="0">Masculino</option>
-                                 <option value="1">Femenino</option>
-                                 <option value="2">Sin Especificar</option>
-                              </select>
-                           </div>
-                           <div class="campo btns">
-                              <div class="label"></div>
-                              <button class="volver-pag1 volver">Atras</button>
-                              <button class="adelante-pag3 adelante">Siguiente</button>
-                           </div>
-                        </div>
-                        <div class="pagina">
-                           <div class="titulo">Informacion de contacto</div>
-                           <div class="campo">
-                              <div class="label">E-mail: <b class="error" id="Email-error"></b></div>
-                              <input type="text" id="Email" placeholder="E-mail">
-                           </div>
-                           <div class="campo">
-                              <div class="label">Numero telefonico: <b class="error" id="NumCel-error"></b></div>
-                              <input type="text" id="NumCel" placeholder="Numero telefonico">
-                           </div>
-                           <div class="campo btns">
-                              <button  class="volver-pag2 volver">Atras</button>
-                              <button class="adelante-pag4 adelante">Siguiente</button>
-                           </div>
-                        </div>
-                        <div class="pagina">
-                           <div class="titulo">Informacion de inicio sesion</div>
-                           <div class="campo">
-                              <div class="label">Nombre de usuario: <b class="error" id="usuario-error"></b></div>
-                              <input type="text" id="usuario" placeholder="Nombre de usuario">
-                           </div>
-                           <div class="campo">
-                              <div class="label">Contraseña: <b class="error" id="Contra-error"></b></div>
-                              <span class="ojitos"onclick="mostrarContra()">
-                              <i id ="mostrar" class ="fa fa eye" title="Mostrar Contraseña"></i>
-                              <i id="Ocultar" class="fa fa fa-eye-slash" title="Ocultar Contraseña"></i>
-                              </span>
-                              <input type="password" id="Contra" placeholder="Contraseña">
-                              </span>
-                           </div>
-                           <div class="campo btns">
-                              <div class="label"></div>
-                              <button class="volver-pag3 volver">Atras</button>
-                              <button class="fin">Finalizar</button>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
+    <div class="col-md-3 text-end">
+    <button type="button" class="btn btn-cta">Login</button>
+    </div>
+</header>
+
+<section id="banner" class="container-fluid bg-img">
+<div class="container height-100vh">
+    <div class="row justify-content-center height-100vh align-items-center">
+      <div class="col-md-10 col-lg-6 text-white text-center">
+        <h1>Cada día, mejor</h1>
+        <h2 class="pb-4">La red más eficiente de profesionales para tu desarrollo y bienestar emocional.</h2>
+        <button class="btn btn-cta">Comenzar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quienes-somos" class="bg-gris">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2 px-4 py-5 my-5 text-center">
+                <h6 class="pink">CONOCENOS</h6>
+                <h3 class="dark-blue pb-4">Quienes somos</h3>
+                <p>
+                    En <strong>Anima-T</strong> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
+                    A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
+                </p>
             </div>
-         </div>
-      </section>
-  
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script>
-         function mostrarContra(){
-             var x=document.getElementById("Contra");
-             var y=document.getElementById("Ocultar");
-             var z=document.getElementById("mostrar");
-             if(x.type=="password"){
-             x.type="text";
-             y.style.display="block";
-             z.style.display="none";
-         } else {
-             x.type="password";
-             y.style.display="none";
-             z.style.display="block";
-         }
-         
-         }
-      </script>
-      <script src="js/script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   </body>
+        </div>
+    </div>
+</section>
+
+<section id="como-funciona">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 px-4 pt-5 my-5 text-center">
+                <h6 class="pink">CÓMO FUNCIONA</h6>
+                <h3 class="dark-blue">¿Buscas ayuda?</h3>
+            </div>
+            <div class="row pb-5">
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 justify-content-center align-items-center">
+                    <img src="img/icono-preguntas.svg" class="card-img-top" alt="preguntas">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">01.</h5>
+                      <p class="card-text">Responde unas preguntas para conocer tu perfil y lo que buscás.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 justify-content-center align-items-center">
+                    <img src="img/icono-profesionales.svg" class="card-img-top" alt="profesionales">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">02.</h5>
+                      <p class="card-text">Accede al ranking de profesionales que construimos para ayudarte.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
+                  <div class="card h-100 justify-content-center align-items-center">
+                    <img src="img/icono-agenda.svg" class="card-img-top" alt="agenda">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">03.</h5>
+                      <p class="card-text">Acuerda un encuentro virtual para comenzar tu proceso.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+</section>
+
+<section id="sumate" class="container-fluid bg-pink">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-12 text-white text-center justify-content-sm-center d-sm-block d-lg-flex">
+                <h2>Si brindas ayuda y te interesa sumarte</h2>
+                <button class="btn btn-sumate ms-lg-3">Hacé click aquí</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faqs" class="container-fluid bg-gris py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 px-4 my-4 text-center">
+                <h6 class="pink">CONOCENOS</h6>
+                <h3 class="dark-blue pb-4">Preguntas frecuentes</h3>
+            </div>
+            <div class="row align-items-center pb-4">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Pregunta 1
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Pregunta 2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Pregunta 3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Pregunta 4
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Pregunta 5
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="img/ilustracion-faqs.svg" alt="faqs" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div id="bg-secundario" class="container-fluid bg-secundario">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-white text-center banner-content">
+                <h3 class="my-3">Desarróllate hacia tus sueños, fácil, rápido y desde cualquier lugar</h3>
+                <button class="btn btn-cta">Comenzar</button>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid bg-dark-blue">
+    <div class="container">
+        <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 border-bottom">
+            <div class="col-12 col-md-6 col-lg-6 text-center text-md-left d-block d-lg-flex align-items-center justify-content-md-start justify-content-lg-start">
+                <p class="mb-3 mb-md-0 text-white"><a href="#" style="color: white; text-decoration: none;">Terminos y condiciones</a></p>
+                <p class="mb-3 mb-md-0 ms-lg-4 text-white"><a href="mailto:valeriacesarini@gmail.com" style="color: white; text-decoration: none;">Contactanos</a></p>
+            </div>
+            <ul class="nav col-12 col-md-6 col-lg-6 text-center justify-content-center justify-content-lg-end list-unstyled d-block d-lg-flex redes">
+                <a href="https://wa.link/uctk4e" target="_blank" alt="Whatsapp" title="Whatsapp"><i class="lab la-whatsapp whatsapp"></i></a>
+                <a href="https://instagram.com/valeria.agostina" target="_blank" alt="Instagram" title="Instagram"><i class="lab la-instagram instagram"></i></a>
+                <a href="https://facebook.com/valecesarini" target="_blank" alt="Facebook" title="Facebook"><i class="lab la-facebook facebook"></i></a>
+                <a href="https://twitter.com/vale_cesarini" target="_blank" alt="Twitter" title="Twitter"><i class="lab la-twitter twitter"></i></a>
+            </ul>
+        </footer>
+        <div id="copyright" class="col-12 text-center text-white py-3">
+            <p>© 2023 Todos los derechos reservados</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
 </html>
