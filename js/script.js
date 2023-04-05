@@ -7,7 +7,7 @@ const btn_atras2=document.querySelector(" .volver-pag2");
 
 const btn_atras3=document.querySelector(" .volver-pag3");
 const btn_final=document.querySelector(" .fin");
-
+const cancelar = document.querySelector(".btn-cancelar");
 const progressText= document.querySelectorAll(" .paso p");
 const progressCheck= document.querySelectorAll(" .paso .check");
 const Num= document.querySelectorAll(" .paso .num");
@@ -16,43 +16,76 @@ const Num= document.querySelectorAll(" .paso .num");
 
 let max=4;
 let cont=1
+
+cancelar.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    Swal.fire({
+      title: '¿Estás seguro de querer salir?',
+      text: "Se perderán los datos, si es que ya llenó algunos.",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sí, deseo salir.'
+    }).then((result) => {
+      if (result.value) {
+        location.href="index.html"
+      }
+    })
+  });
   //botones de avance
 btn_adelante2.addEventListener("click", function(e){
   
     e.preventDefault();
     
     var nombre=document.getElementById("nombres").value;
-
+    var apellido=document.getElementById("apellido").value;
     
     /* Control de errores */
 
-    if(nombre==""){
+    if(nombre ==""){
 document.getElementById("nombres-error").innerHTML="este campo no puede quedar vacio."
 document.getElementById("nombres").style.borderColor="red";
+    }else if( apellido ==""){
+document.getElementById("apellido-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("apellido").style.borderColor="red";
     }else{
         document.getElementById("nombres-error").innerHTML=""
         document.getElementById("nombres").style.borderColor="lightgrey";
-        
+        document.getElementById("apellido-error").innerHTML=""
+        document.getElementById("apellido").style.borderColor="lightgrey";  
     movPag.style.marginLeft="-25%";
     /* movimiento de progress bar */ 
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
+    }
 }
-});
+
+     
+);
   
 
 
 btn_adelante3.addEventListener("click", function(e){
     
     e.preventDefault();
+    var sexo=document.getElementById("sexo").value;
+    if(sexo == -1){
+        document.getElementById("sexo-error").innerHTML="este campo no puede quedar vacio."
+        document.getElementById("sexo").style.borderColor="red";
+            }else{
+                document.getElementById("sexo-error").innerHTML=""
+                document.getElementById("sexo").style.borderColor="lightgrey";
+               
     movPag.style.marginLeft="-50%"; 
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
-});
+}});
 btn_adelante4.addEventListener("click", function(e){
     
     e.preventDefault();
