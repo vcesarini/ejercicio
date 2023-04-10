@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
@@ -9,7 +9,7 @@ p {
     font-size: 16px;
 }
 #banner h1 {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 900;
     font-size: 40px;
 }
@@ -19,12 +19,12 @@ p {
     font-size: 22px;
 }
 #sumate h2, #bg-secundario h2 {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     font-size: 23px;
 }
 h3 {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 900;
     font-size: 28px;
 }
@@ -90,7 +90,7 @@ p {
     background-color: #25221b;
 }
 .btn-sumate {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     background-color: transparent;
@@ -115,7 +115,7 @@ p {
     text-decoration: none;
 }
 #como-funciona h5 {
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 900;
     font-size: 30px;
     color: #116a4a;
@@ -133,7 +133,7 @@ p {
 }
 .accordion-header button {
     font-weight: 700;
-    font-family: 'Nunito', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item {
     border-radius: 10px !important;
