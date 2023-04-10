@@ -35,14 +35,13 @@
         <h1>Cada día, mejor</h1>
         <h2 class="pb-4">La red más eficiente de profesionales para tu desarrollo y bienestar emocional.</h2>
 
-        <!-- Button trigger modal -->
 <button type="button" class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Participá
+Participá
 </button>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog modal-lg">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
@@ -50,8 +49,7 @@
       </div>
       <div class="modal-body">
 
-        <div class="container">
-          <header>Registro de usuario</header>
+          <h2>Registro de usuario</h2>
           <div class="progress-bar">
               <div class="paso">
                   <p>Informacion Principal</p>
@@ -83,103 +81,99 @@
               </div>
           </div>
           <div class="form-princ">
+            <form action="#">
+                
+                <div class="pagina movPag">
+                <div class="titulo">Informacion principal</div>
+                <div class="campo">
+        <div class="label">Nombres: <b class="error" id="nombres-error"></b></div>
+        <input type="text" id="nombres" placeholder="Nombres">
+        </div>
+                <div class="campo">
+                <div class="label">Apellido Paterno: <b class="error" id="apellido1-error"></b></div>
+                <input type="text" id="apellido1" placeholder="Apellido Paterno">
+            </div>
+                <div class="campo">
+                <div class="label">Apellido Materno: <b class="error" id="apellido2-error"></b></div>
+                <input type="text" id="apellido2" placeholder="Apellido Materno">
+            </div>
+                <div class="campo sigPag"style="margin-bottom: 12px;">
               
-      
-          <form action="#">
-              
-              <div class="pagina movPag">
-              <div class="titulo">Informacion principal</div>
-              <div class="campo">
-      <div class="label">Nombres: <b class="error" id="nombres-error"></b></div>
-      <input type="text" id="nombres" placeholder="Nombres">
-      </div>
-              <div class="campo">
-              <div class="label">Apellido Paterno: <b class="error" id="apellido1-error"></b></div>
-              <input type="text" id="apellido1" placeholder="Apellido Paterno">
-          </div>
-              <div class="campo">
-              <div class="label">Apellido Materno: <b class="error" id="apellido2-error"></b></div>
-              <input type="text" id="apellido2" placeholder="Apellido Materno">
-          </div>
-              <div class="campo sigPag"style="margin-bottom: 12px;">
-             
-        
-              <button >Siguiente</button>
-          </div>
-      
-          </div>
-       
-          <div class="pagina movPag">
-          <div class="titulo">Informacion Secundaria</div>
-          <div class="campo">
-      <div class="label">Fecha nacimiento : <b class="error" id="FechaNac-error"></b></div>
-      <input type="Date" id="FechaNac" max="2010-12-31" value="2010-02-03">
-      </div>
-          <div class="campo">
-          <div class="label">Sexo: <b class="error" id="sexo-error"></b></div>
-         <select name="sexo" id="sexo">
-         <option value="-1" disabled selected>Escoge una opcion</option>
-         <option value="0">Masculino</option>
-         <option value="1">Femenino</option>
-         <option value="2">Sin Especificar</option>
-      </select>
-      </div>
           
-          <div class="campo btns">
-          <div class="label"></div>
-          <button class="volver-pag1 volver">Atras</button>
-          <button class="adelante-pag3 adelante">Siguiente</button>
-      </div>
-      
-      </div>
-      
-      <div class="pagina">
-      <div class="titulo">Informacion de contacto</div>
-      <div class="campo">
-      <div class="label">E-mail: <b class="error" id="Email-error"></b></div>
-      <input type="text" id="Email" placeholder="E-mail">
-      </div>
-      <div class="campo">
-      <div class="label">Numero telefonico: <b class="error" id="NumCel-error"></b></div>
-      <input type="text" id="NumCel" placeholder="Numero telefonico">
-      </div>
-      
-      <div class="campo btns">
-      
-      
-      <button  class="volver-pag2 volver">Atras</button>
-      <button class="adelante-pag4 adelante">Siguiente</button>
-      </div>
-      </div>
-      
-      <div class="pagina">
-      <div class="titulo">Informacion de inicio sesion</div>
-      <div class="campo">
-      <div class="label">Nombre de usuario: <b class="error" id="usuario-error"></b></div>
-      <input type="text" id="usuario" placeholder="Nombre de usuario">
-      </div>
-      <div class="campo">
-      <div class="label">Contraseña: <b class="error" id="Contra-error"></b></div>
-      <span class="ojitos"onclick="mostrarContra()">
-          <i id ="mostrar" class ="fa fa eye" title="Mostrar Contraseña"></i>
-          <i id="Ocultar" class="fa fa fa-eye-slash" title="Ocultar Contraseña"></i>
-      </span>
-      <input type="password" id="Contra" placeholder="Contraseña">
-      </span>
-      </div>
-      
-      <div class="campo btns">
-      <div class="label"></div>
-      
-      <button class="volver-pag3 volver">Atras</button>
-      <button class="fin">Finalizar</button>
-      </div>
-      
-      </div>
-          </form>
-      
-      </div>
-      </div>
+                <button >Siguiente</button>
+            </div>
+        
+            </div>
+        
+            <div class="pagina movPag">
+            <div class="titulo">Informacion Secundaria</div>
+            <div class="campo">
+        <div class="label">Fecha nacimiento : <b class="error" id="FechaNac-error"></b></div>
+        <input type="Date" id="FechaNac" max="2010-12-31" value="2010-02-03">
+        </div>
+            <div class="campo">
+            <div class="label">Sexo: <b class="error" id="sexo-error"></b></div>
+          <select name="sexo" id="sexo">
+          <option value="-1" disabled selected>Escoge una opcion</option>
+          <option value="0">Masculino</option>
+          <option value="1">Femenino</option>
+          <option value="2">Sin Especificar</option>
+        </select>
+        </div>
+            
+            <div class="campo btns">
+            <div class="label"></div>
+            <button class="volver-pag1 volver">Atras</button>
+            <button class="adelante-pag3 adelante">Siguiente</button>
+        </div>
+        
+        </div>
+        
+        <div class="pagina">
+        <div class="titulo">Informacion de contacto</div>
+        <div class="campo">
+        <div class="label">E-mail: <b class="error" id="Email-error"></b></div>
+        <input type="text" id="Email" placeholder="E-mail">
+        </div>
+        <div class="campo">
+        <div class="label">Numero telefonico: <b class="error" id="NumCel-error"></b></div>
+        <input type="text" id="NumCel" placeholder="Numero telefonico">
+        </div>
+        
+        <div class="campo btns">
+        
+        
+        <button  class="volver-pag2 volver">Atras</button>
+        <button class="adelante-pag4 adelante">Siguiente</button>
+        </div>
+        </div>
+        
+        <div class="pagina">
+        <div class="titulo">Informacion de inicio sesion</div>
+        <div class="campo">
+        <div class="label">Nombre de usuario: <b class="error" id="usuario-error"></b></div>
+        <input type="text" id="usuario" placeholder="Nombre de usuario">
+        </div>
+        <div class="campo">
+        <div class="label">Contraseña: <b class="error" id="Contra-error"></b></div>
+        <span class="ojitos"onclick="mostrarContra()">
+            <i id ="mostrar" class ="fa fa eye" title="Mostrar Contraseña"></i>
+            <i id="Ocultar" class="fa fa fa-eye-slash" title="Ocultar Contraseña"></i>
+        </span>
+        <input type="password" id="Contra" placeholder="Contraseña">
+        </span>
+        </div>
+        
+        <div class="campo btns">
+        <div class="label"></div>
+        
+        <button class="volver-pag3 volver">Atras</button>
+        <button class="fin">Finalizar</button>
+        </div>
+        
+        </div>
+            </form>
+          </div>
 
       </div>
       <!-- <div class="modal-footer">
@@ -361,6 +355,33 @@
 </div>
 
 <script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
     function mostrarContra(){
         var x=document.getElementById("Contra");
         var y=document.getElementById("Ocultar");
