@@ -18,12 +18,12 @@ let max=4;
 let cont=1
   //botones de avance
 btn_adelante2.addEventListener("click", function(e){
-  
+
     e.preventDefault();
-    
+
     var nombre=document.getElementById("nombres").value;
 
-    
+
     /* Control de errores */
 
     if(nombre==""){
@@ -32,38 +32,38 @@ document.getElementById("nombres").style.borderColor="red";
     }else{
         document.getElementById("nombres-error").innerHTML=""
         document.getElementById("nombres").style.borderColor="lightgrey";
-        
+
     movPag.style.marginLeft="-25%";
-    /* movimiento de progress bar */ 
+    /* movimiento de progress bar */
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
 }
 });
-  
+
 
 
 btn_adelante3.addEventListener("click", function(e){
-    
+
     e.preventDefault();
-    movPag.style.marginLeft="-50%"; 
+    movPag.style.marginLeft="-50%";
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
 });
 btn_adelante4.addEventListener("click", function(e){
-    
+
     e.preventDefault();
-    movPag.style.marginLeft="-75%"; 
+    movPag.style.marginLeft="-75%";
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
     progressText[cont - 1].classList.add("active");
     cont +=1;
 });
 btn_final.addEventListener("click", function(e){
-    
+
     e.preventDefault();
     Num [cont - 1].classList.add("active");
     progressCheck[cont - 1].classList.add("active");
@@ -72,28 +72,28 @@ btn_final.addEventListener("click", function(e){
   alert("aqui finaliza el registro");
 });
 btn_atras1.addEventListener("click", function(e){
-    
+
     e.preventDefault();
-    movPag.style.marginLeft="0%"; 
+    movPag.style.marginLeft="0%";
     Num [cont - 2].classList.remove("active");
     progressCheck[cont - 2].classList.remove("active");
     progressText[cont - 2].classList.remove("active");
     cont -=1;
-    
+
 });
 btn_atras2.addEventListener("click", function(e){
-    
+
     e.preventDefault();
-    movPag.style.marginLeft="-25%"; 
+    movPag.style.marginLeft="-25%";
     Num [cont - 2].classList.remove("active");
     progressCheck[cont - 2].classList.remove("active");
     progressText[cont - 2].classList.remove("active");
     cont -=1;
 });
 btn_atras3.addEventListener("click", function(e){
-    
+
     e.preventDefault();
-    movPag.style.marginLeft="-50%"; 
+    movPag.style.marginLeft="-50%";
     Num [cont - 2].classList.remove("active");
     progressCheck[cont - 2].classList.remove("active");
     progressText[cont - 2].classList.remove("active");
@@ -103,7 +103,7 @@ btn_atras3.addEventListener("click", function(e){
 /* FAKE STORE */
 
 const fakeStore = document.querySelector('#store')
-const producto = fetch('https://fakestoreapi.com/products?limit=3');
+const producto = fetch('https://fakestoreapi.com/products?limit=4');
 
 producto.then(res => res.json())
         .then(data => {
