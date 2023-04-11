@@ -82,7 +82,7 @@ p {
     font-size: 16px;
     background-color: #05276B;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 5px 30px;
 }
 .btn-cta:hover {
@@ -95,7 +95,7 @@ p {
     font-size: 16px;
     background-color: transparent;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 1px solid #fff;
     padding: 5px 30px;
 }
@@ -126,6 +126,26 @@ p {
 #que-ofrecemos i {
 font-size: 4rem;
 }
+#productos .card {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#productos .card img{
+    max-height: 150px;
+    width: 150px;
+}
+#productos .card h5, .card p {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.control-texto {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 .accordion-item {
     margin: 10px 0;
 }

@@ -286,7 +286,7 @@ Participá
                 </div>
                 <textarea name="descripcion" class="form-control" id="descripcion" placeholder="Mensaje" cols="30" rows="3" required></textarea>
                 </div>
-                <input type="submit" class="btn btn-primary" value="Enviar">
+                <input type="submit" class="btn btn-cta" value="Enviar">
             </div>
 
         </div>
@@ -315,23 +315,29 @@ Participá
 </div>
 
 <script>
+    const fakeStore = document.querySelector('#store')
+const producto = fetch('https://fakestoreapi.com/products?limit=4');
 
-    function mostrarContra(){
-        var x=document.getElementById("Contra");
-        var y=document.getElementById("Ocultar");
-        var z=document.getElementById("mostrar");
-        if(x.type=="password"){
-        x.type="text";
-        y.style.display="block";
-        z.style.display="none";
-    } else {
-        x.type="password";
-        y.style.display="none";
-        z.style.display="block";
-    }
-
-}
+producto.then(res => res.json())
+        .then(data => {
+            for (const elemento of data) {
+                const nuevoDiv = document.createElement('div');
+                nuevoDiv.classList.add('card');
+                nuevoDiv.innerHTML = `
+                    <img src="${elemento.image}" class="card-img-top" alt="${elemento.title}">
+                    <div class="card-body">
+                      <h5 class="card-title color-secundario fw-bolder">${elemento.title}</h5>
+                      <p class="color-primario">${elemento.category}</p>
+                      <p class="card-text control-texto">${elemento.description}</p>
+                      <p class="color-primario fw-bolder">Precio: $${elemento.price}</p>
+                        <a href="#" class="btn btn-cta">COMPRAR</a>
+                    </div>
+                `;
+                fakeStore.appendChild(nuevoDiv)
+            }
+        });
 </script>
+
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
