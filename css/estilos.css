@@ -1,5 +1,28 @@
-/*estilo boton cancelar*/
-.btn-cancelar{
+    *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        font-family: serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: url(ondas.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container{
+        width: 350px;
+     background: #FFF ;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px 35px 0 35px;
+    }
+    /*estilo boton cancelar*/
+    .btn-cancelar{
 width: 60px;
 height: 60px;
 padding: 12px 15px;
@@ -36,9 +59,9 @@ right:-450px;
     transition: margin-left 0.3s ease-in-out;
 }
 .form-princ .pagina .titulo{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    font-weight: 500;
+    font-width: 500px;
 }
 .form-princ .form .pagina .campo{
 height: 35px;
@@ -79,7 +102,7 @@ position: relative;
 .form-princ .form .pagina .campo .button{
     width: 100%;
     height: calc (100%+5px);
-    margin-top:-20px;
+    margim-top:-20px;
     border: none;
     background: #0E2C48;
     color: #FFF;
@@ -96,7 +119,7 @@ position: relative;
 
 }
 form-princ .form .pagina .btns .button{
-    margin-top:-20px!important;
+    margim-top:-20px!important;
 
 }
 form .pagina .btns .button .volver{

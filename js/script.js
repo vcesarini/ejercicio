@@ -44,7 +44,7 @@ btn_adelante2.addEventListener("click", function(e){
     e.preventDefault();
     
     var nombre=document.getElementById("nombres").value;
-    var apellido=document.getElementById("apellido").value;
+    var apellido=document.getElementById("apellido1").value;
     
     /* Control de errores */
 
@@ -52,13 +52,13 @@ btn_adelante2.addEventListener("click", function(e){
 document.getElementById("nombres-error").innerHTML="este campo no puede quedar vacio."
 document.getElementById("nombres").style.borderColor="red";
     }else if( apellido ==""){
-document.getElementById("apellido-error").innerHTML="este campo no puede quedar vacio."
-document.getElementById("apellido").style.borderColor="red";
+document.getElementById("apellido1-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("apellido1").style.borderColor="red";
     }else{
         document.getElementById("nombres-error").innerHTML=""
         document.getElementById("nombres").style.borderColor="lightgrey";
-        document.getElementById("apellido-error").innerHTML=""
-        document.getElementById("apellido").style.borderColor="lightgrey";  
+        document.getElementById("apellido1-error").innerHTML=""
+        document.getElementById("apellido1").style.borderColor="lightgrey";  
     movPag.style.marginLeft="-25%";
     /* movimiento de progress bar */ 
     Num [cont - 1].classList.add("active");
@@ -299,7 +299,7 @@ btn_atras3.addEventListener("click", function(e){
 
 function formulario() {
   let nombre = document.getElementById("nombres").value;
-  let apellido = document.getElementById("apellido").value;
+  let apellido = document.getElementById("apellido1").value;
  let FechaNac= document.getElementById("FechaNac").value
  let Email=document.getElementById("Email").value
   let telefono = document.getElementById("NumCel").value;
@@ -319,7 +319,7 @@ function formulario() {
 
 /* FAKE STORE */
 
-/*const fakeStore = document.querySelector('#store')
+const fakeStore = document.querySelector('#store')
 const producto = fetch('https://fakestoreapi.com/products?limit=4');
 
 producto.then(res => res.json())
@@ -339,4 +339,4 @@ producto.then(res => res.json())
                 `;
                 fakeStore.appendChild(nuevoDiv)
             }
-        });*/
+        });
