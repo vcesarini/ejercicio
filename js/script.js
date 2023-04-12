@@ -242,7 +242,7 @@ function verificarUsuario($n){
   }
   function limpiar(){
     document.getElementById("nombres").value = "";
-    document.getElementById("apellido").value = "";
+    document.getElementById("apellido1").value = "";
   
     document.querySelector('input[type="date"]').value = "10/12/2010";
     document.getElementById("sexo").value = -1;
