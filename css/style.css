@@ -132,17 +132,26 @@ font-size: 4rem;
     justify-content: center;
 }
 #productos .card img{
-    max-height: 150px;
-    width: 150px;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
 }
-#productos .card h5, .card p {
+#productos .card-body h5 {
     font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+#productos .card-body p {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+#productos .card-footer {
+    border:none;
+    background-color: transparent;
 }
 .control-texto {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
