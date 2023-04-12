@@ -132,8 +132,9 @@ font-size: 4rem;
     justify-content: center;
 }
 #productos .card img{
-    height: auto;
-    width: 150px;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
 }
 #productos .card-body h5 {
     font-family: 'Montserrat', Arial, sans-serif;
