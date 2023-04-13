@@ -11,7 +11,7 @@ $.ajax({ method: "GET", url: "https://fakestoreapi.com/products?limit=4" })
         producto.forEach((elemento) => {
 
         const elem = document.createElement('div');
-            elem.classList.add('col-sm-12','col-md-12','col-lg-3','card');
+            elem.classList.add('col-sm-12','col-md-12','col-lg-3','card','my-3');
               elem.innerHTML = `
                             <img src="${elemento.image}" class="card-img-top" alt="${elemento.title}">
                             <div class="card-body">
