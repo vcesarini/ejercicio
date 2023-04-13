@@ -21,7 +21,7 @@ $.ajax({ method: "GET", url: "https://fakestoreapi.com/products?limit=4" })
                                 <p class="color-primario fw-bolder">Precio: $${elemento.price}</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><a href="#" class="btn btn-cta">COMPRAR</a></small>
+                                <small class="text-body-secondary"><a href="../registrar.html" class="btn btn-cta">COMPRAR</a></small>
                             </div>
                         `;
             nuevoDivCol.appendChild(elem);
