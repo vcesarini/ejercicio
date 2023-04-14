@@ -127,11 +127,11 @@ function verificarCorreo($n){
     var ExpRegular_Correo = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     return ExpRegular_Correo.test($n);
 
-/*     if ($n.match(ExpRegular_Correo)){
+     if ($n.match(ExpRegular_Correo)){
       return true
     }else{
       return false;
-    } */
+    } 
 
   }
 
@@ -304,11 +304,12 @@ function formulario() {
  let Email=document.getElementById("Email").value
   let telefono = document.getElementById("NumCel").value;
   let sexo = document.getElementById("sexo").value;
+  event.preventDefault();
   Swal.fire(
     'Revisar si los datos son correctos:?',
-    //icon: 'info',
+    
     `Nombre: ${nombre}  ${apellido} , Telefono: ${telefono}  , Fecha Nacimiento: ${FechaNac} , Email: ${Email}  `,
-   
+  
    
      
       
