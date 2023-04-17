@@ -34,7 +34,7 @@ border-radius: 50%;
 position: relative;
 font-size: 18px;
 font-weight: bold;
-top: -190px;
+top: -210px;
 right:-490px;
 }
 .btn-cancelar:hover{
@@ -230,3 +230,21 @@ color:#DB2A31;
 /* float:right; */
 text-align: center;
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .container{
+        width: 90%;
+        max-width: 400px;
+        background: #FFF ;
+        border-radius: 7px;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    .btn-cancelar{
+        width: 30px;
+        height: 30px;
+        top: -210px;
+        right:-230px;
+        }
+ } 
