@@ -11,7 +11,6 @@ p {
 #banner h1 {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 900;
-    font-size: 40px;
 }
 #banner h2 {
     font-family: 'Open Sans', Arial, sans-serif;
@@ -84,10 +83,18 @@ p {
     color: #fff;
     border-radius: 20px;
     padding: 5px 30px;
+    width: 100%;
+    border: none;
 }
 .btn-cta:hover {
     color: #fff;
     background-color: #F9008F;
+    border: none !important;
+}
+.btn-cta:focus, .btn-cta:active {
+    color: #fff !important;
+    background-color: #F9008F !important;
+    border: none !important;
 }
 .btn-sumate {
     font-family: 'Montserrat', Arial, sans-serif;
@@ -221,6 +228,10 @@ font-size: 4rem;
         margin-top: 0;
         text-align: right;
     }
+    .btn-cta {
+        width: 100%;
+        border: none;
+    }
  } 
 
 /* Large devices (desktops, 992px and up) */
@@ -233,5 +244,9 @@ font-size: 4rem;
         height: auto;
         margin-top: 0;
         text-align: right;
+    }
+    .btn-cta {
+        width: auto;
+        border: none;
     }
 }
