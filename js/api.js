@@ -1,6 +1,6 @@
 const HTMLResponse = document.querySelector("#store");
 const nuevoDivCol = document.createElement('div');
-nuevoDivCol.classList.add('col-12','d-lg-flex');
+nuevoDivCol.classList.add('col-12','d-lg-flex','gap-2','justify-content-center');
 
 $.ajax({ method: "GET", url: "https://fakestoreapi.com/products?limit=4" })
 
