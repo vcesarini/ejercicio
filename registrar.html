@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registrate en fava INDUMENTARIA</title>
 <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -51,15 +52,15 @@
     <div class="campo">
         <div class="label">Nombres:</div>
         <div><b class="error" id="nombres-error"></b></div>
-        <input type="text" id="nombres" placeholder="Nombres">
+        <input class="form-control" type="text" id="nombres" placeholder="Nombres">
     </div>
     <div class="campo">
         <div class="label">Apellido Paterno:</div>
         <div><b class="error" id="apellido1-error"></b></div>
-        <input type="text" id="apellido1" placeholder="Apellido Paterno">
+        <input class="form-control" type="text" id="apellido1" placeholder="Apellido Paterno">
     </div>
     <div class="campo sigPag" style="margin-bottom: 12px; padding-top: 20px;">
-        <button>Siguiente</button>
+        <button class="btn btn-primary">Siguiente</button>
     </div>
     </div>
     <div class="pagina movPag">
@@ -71,7 +72,7 @@
     <div class="campo">
         <div class="label">Sexo:</div>
         <div><b class="error" id="sexo-error"></b></div>
-        <select name="sexo" id="sexo">
+        <select class="form-select" name="sexo" id="sexo">
             <option value="-1" disabled selected>Escoge una opcion</option>
             <option value="0">Masculino</option>
             <option value="1">Femenino</option>
@@ -80,8 +81,8 @@
     </div>
     <div class="campo btns">
         <div class="label"></div>
-        <button class="volver-pag1 volver" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
-        <button class="adelante-pag3 adelante" style="margin-bottom: 12px; margin-top: 20px;">Siguiente</button>
+        <button class="btn btn-primary volver-pag1 volver" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
+        <button class="btn btn-primary adelante-pag3 adelante" style="margin-bottom: 12px; margin-top: 20px;">Siguiente</button>
     </div>
     </div>
     <div class="pagina">
@@ -89,16 +90,16 @@
     <div class="campo">
         <div class="label">E-mail:</div>
         <div><b class="error" id="Email-error"></b></div>
-        <input type="text" id="Email" placeholder="E-mail">
+        <input class="form-control" type="text" id="Email" placeholder="E-mail">
     </div>
     <div class="campo">
         <div class="label">Numero telefonico:</div>
         <div><b class="error" id="NumCel-error"></b></div>
-        <input type="text" id="NumCel" placeholder="Numero telefonico">
+        <input class="form-control" type="text" id="NumCel" placeholder="Numero telefonico">
     </div>
     <div class="campo btns">
-        <button  class="volver-pag2 volver" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
-        <button class="adelante-pag4 adelante" style="margin-bottom: 12px; margin-top: 20px;">Siguiente</button>
+        <button  class="btn btn-primary volver-pag2 volver" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
+        <button class="btn btn-primary adelante-pag4 adelante" style="margin-bottom: 12px; margin-top: 20px;">Siguiente</button>
     </div>
     </div>
     <div class="pagina">
@@ -111,20 +112,20 @@
             <div class="campo">
                 <div class="label">Nombre de usuario:</div>
                 <div><b class="error" id="usuario-error"></b></div>
-                <input type="text" id="usuario" placeholder="Nombre de usuario">
+                <input class="form-control" type="text" id="usuario" placeholder="Nombre de usuario">
             </div>
             <div class="campo">
                 <div class="label">Contraseña:</div>
                 <div><b class="error" id="Contra-error"></b></div>
            
-                <input type="password" id="Contra" placeholder="Contraseña">
+                <input class="form-control" type="password" id="Contra" placeholder="Contraseña">
                 <button onclick="mostrarContra()"style="margin-bottom: 12px; ">ver/ocultar</button>
             </div>
             <div class="campo btns">
                 
-                <button class="volver-pag3 volver" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
-                <button class="fin" style="margin-bottom: 12px; margin-top: 20px;">Finalizar</button>
-                <button onClick="formulario()" style="margin-bottom: 12px; margin-top: 20px;">Mostrar Info</button> 
+                <button class="volver-pag3 volver btn btn-primary" style="margin-bottom: 12px; margin-top: 20px;">Atras</button>
+                <button class="fin btn btn-primary" style="margin-bottom: 12px; margin-top: 20px;">Finalizar</button>
+                <button class="btn btn-info" onClick="formulario()" style="margin-bottom: 12px; margin-top: 20px;">Mostrar Info</button> 
             </div>
         </div>
 </form>
