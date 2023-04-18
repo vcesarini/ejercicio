@@ -67,12 +67,8 @@ document.getElementById("apellido1").style.borderColor="red";
     cont +=1;
     }
 }
-
-     
 );
   
-
-
 btn_adelante3.addEventListener("click", function(e){
     
     e.preventDefault();
@@ -295,7 +291,6 @@ btn_atras3.addEventListener("click", function(e){
     `Nombre: ${nombre}  ${apellido} , Telefono: ${telefono}  , Fecha Nacimiento: ${FechaNac} , Email: ${Email}  `,
   )
 });*/
-
 
 function formulario() {
   let nombre = document.getElementById("nombres").value;
