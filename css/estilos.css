@@ -21,33 +21,33 @@ width: 400px;
 background: #FFF ;
 border-radius: 7px;
 text-align: center;
-padding: 30px 35px;
+padding: 20px 30px;
 }
 /*estilo boton cancelar*/
 .btn-cancelar{
-width: 60px;
-height: 60px;
-padding: 12px 15px;
+width: 40px;
+height: 40px;
+padding: 10px;
 background: #F9008F;
 color: white;
 border-radius: 50%;
-position: relative;
+/* position: relative; */
 font-size: 18px;
 font-weight: bold;
-top: -210px;
-right:-490px;
+/* top: -225px;
+right:-330px; */
 }
 .btn-cancelar:hover{
     background: black;
     color: grey;
     }
 a{
-text-decoration: none;
+text-decoration: none !important;
 }
 .container header{
 font-size: 28px;
 font-weight: 600;
-margin: 0 0 30px 0 ; 
+margin: 30px 0; 
 }
 .container .form-princ{
 width:100% ;
@@ -233,18 +233,11 @@ text-align: center;
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
-    .container{
-        width: 90%;
-        max-width: 400px;
-        background: #FFF ;
-        border-radius: 7px;
-        text-align: center;
-        padding: 20px 15px;
-    }
-    .btn-cancelar{
+
+    /* .btn-cancelar{
         width: 30px;
         height: 30px;
-        top: -210px;
-        right:-230px;
-        }
+        top: -225px;
+        right:-444px;
+        } */
  } 
