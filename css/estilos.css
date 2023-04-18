@@ -28,7 +28,7 @@ padding: 20px 30px;
 width: 40px;
 height: 40px;
 padding: 10px;
-background: #F9008F;
+background: #05276B;
 color: white;
 border-radius: 50%;
 /* position: relative; */
@@ -115,7 +115,7 @@ cursor:pointer;
 transition:0.3 ease ;
 }
 .form-princ .form .pagina .campo .hover{
-background: #DB2A31;
+background: #F9008F;
 }
 .form-princ .form .pagina .btns .button{
 margin-top:-20px!important;
@@ -144,7 +144,7 @@ margin-bottom: 8px;
 transition: 0.2s;
 }
 .progress-bar .paso p.active{
-color: #DB2A31;
+color: #F9008F;
 } 
 .progress-bar .paso .num{
 position: relative;
@@ -159,8 +159,8 @@ line-height:25px ;
 transition: 0.2s;
 }
 .progress-bar .paso .num.num.active{
-border-color: red;
-background: #DB2A31;
+border-color: #F9008F;
+background: #F9008F;
 }
 .progress-bar .paso .num span{
 font-weight: 500;
@@ -201,7 +201,7 @@ background: black;
 display: none;
 }
 .progress-bar .paso .num.active:after{
-background: red;
+background: #F9008F;
 animation: mov_Linea 0.3s linear forwards;
 transform: scaleX(0);
 transform-origin:left ;
