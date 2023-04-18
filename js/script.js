@@ -206,7 +206,7 @@ btn_final.addEventListener("click", function(e){
               title: '¡Enhorabuena!',
     
               html: 'El usuario: <br>' +
-                    '<b style="color: #0E2C48; font-size: 14px;";>' + 
+                    '<b style="color: #ff0000; font-size: 14px;">' + 
                     newUser +'</b><br> Ha sido registrado con éxito.',
     
               confirmButtonText:
@@ -300,21 +300,20 @@ btn_atras3.addEventListener("click", function(e){
 function formulario() {
   let nombre = document.getElementById("nombres").value;
   let apellido = document.getElementById("apellido1").value;
- let FechaNac= document.getElementById("FechaNac").value
- let Email=document.getElementById("Email").value
+  let FechaNac= document.getElementById("FechaNac").value
+  let Email=document.getElementById("Email").value
   let telefono = document.getElementById("NumCel").value;
   let sexo = document.getElementById("sexo").value;
   event.preventDefault();
   Swal.fire(
-    'Revisar si los datos son correctos:?',
+    '¿Los datos son correctos?',
     
-    `<p>Nombre: ${nombre}  ${apellido},</p>
-     <p>Telefono: ${telefono},</p>
-     <p>Fecha Nacimiento: ${FechaNac},</p>
-     <p>Email: ${Email}</p>`
-     ,   
+    `<p>Nombre: ${nombre}  ${apellido}</p>
+     <p>Telefono: ${telefono}</p>
+     <p>Fecha Nacimiento: ${FechaNac}</p>
+     <p>Email: ${Email}</p>
+    `,   
   )
-  
 };
 
 /* FAKE STORE */
