@@ -49,10 +49,10 @@ btn_adelante2.addEventListener("click", function(e){
     /* Control de errores */
 
     if(nombre ==""){
-document.getElementById("nombres-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("nombres-error").innerHTML="Este campo no puede quedar vacío."
 document.getElementById("nombres").style.borderColor="red";
     }else if( apellido ==""){
-document.getElementById("apellido1-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("apellido1-error").innerHTML="Este campo no puede quedar vacío."
 document.getElementById("apellido1").style.borderColor="red";
     }else{
         document.getElementById("nombres-error").innerHTML=""
@@ -79,7 +79,7 @@ btn_adelante3.addEventListener("click", function(e){
     var sexo=document.getElementById("sexo").value;
     var fechaNac=document.getElementById("FechaNac").value;
     if(sexo == -1){
-        document.getElementById("sexo-error").innerHTML="este campo no puede quedar vacio."
+        document.getElementById("sexo-error").innerHTML="Este campo no puede quedar vacío."
         document.getElementById("sexo").style.borderColor="red";
             }else if ( fechaNac=="" ){
                 document.getElementById("FechaNac-error").innerHTML = "* Seleccione una fecha."
@@ -106,10 +106,10 @@ btn_adelante4.addEventListener("click", function(e){
 
     if(Email=="" || 
     !verificarCorreo(Email)){
-document.getElementById("Email-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("Email-error").innerHTML="Este campo no puede quedar vacío."
 document.getElementById("Email").style.borderColor="red";
     }else if(  NumCel=="" || NumCel.length<=8|| !verificarNumCel( NumCel)){
-document.getElementById("NumCel-error").innerHTML="este campo no puede quedar vacio."
+document.getElementById("NumCel-error").innerHTML="Este campo no puede quedar vacío."
 document.getElementById("NumCel").style.borderColor="red";
     }else{
         document.getElementById("Email-error").innerHTML=""
@@ -146,10 +146,10 @@ btn_final.addEventListener("click", function(e){
     var usuario=document.getElementById("usuario").value;
     var password=document.getElementById("Contra").value;
     if(usuario ==""){
-        document.getElementById("usuario-error").innerHTML="este campo no puede quedar vacio."
+        document.getElementById("usuario-error").innerHTML="Este campo no puede quedar vacío."
         document.getElementById("usuario").style.borderColor="red";
             }else if( password ==""){
-        document.getElementById("Contra-error").innerHTML="este campo no puede quedar vacio."
+        document.getElementById("Contra-error").innerHTML="Este campo no puede quedar vacío."
         document.getElementById("Contra").style.borderColor="red";
             }else{
                 document.getElementById("usuario-error").innerHTML=""
@@ -198,7 +198,7 @@ btn_final.addEventListener("click", function(e){
           confirmButtonColor: '#3085d6',
           cancelButtonColor: '#d33',
           confirmButtonText: 'Sí, continuar.',
-          footer: '<a href="termCond.html" target="_blank">Ver términos y condiciones.</a>'
+          footer: '<a href="terminos-condiciones.html" target="_blank">Ver términos y condiciones.</a>'
         }).then((result) => {
           if (result.value) {
             Swal.fire({
@@ -206,7 +206,7 @@ btn_final.addEventListener("click", function(e){
               title: '¡Enhorabuena!',
     
               html: 'El usuario: <br>' +
-                    '<b style="color: #0E2C48; font-size: px;";>' + 
+                    '<b style="color: #0E2C48; font-size: 14px;";>' + 
                     newUser +'</b><br> Ha sido registrado con éxito.',
     
               confirmButtonText:
@@ -308,12 +308,11 @@ function formulario() {
   Swal.fire(
     'Revisar si los datos son correctos:?',
     
-    `Nombre: ${nombre}  ${apellido} , Telefono: ${telefono}  , Fecha Nacimiento: ${FechaNac} , Email: ${Email}  `,
-  
-   
-     
-      
-      
+    `<p>Nombre: ${nombre}  ${apellido},</p>
+     <p>Telefono: ${telefono},</p>
+     <p>Fecha Nacimiento: ${FechaNac},</p>
+     <p>Email: ${Email}</p>`
+     ,   
   )
   
 };
