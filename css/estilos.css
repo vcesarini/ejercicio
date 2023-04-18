@@ -65,7 +65,7 @@ transition: margin-left 0.3s ease-in-out;
 text-align: center;
 margin-bottom: 10px;
 font-size: 20px;
-font-weight: 500;
+font-weight: 700;
 }
 .form-princ .form .pagina .campo{
 height: 35px;
@@ -165,7 +165,7 @@ background: #DB2A31;
 .progress-bar .paso .num span{
 font-weight: 500;
 font-size:17px ;
-line-height: 25px;
+line-height: 22px;
 position:absolute  ;
 left: 50%;
 transform: translateX(-50%);

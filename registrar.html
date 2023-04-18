@@ -10,10 +10,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div>
-    <a href="index.html" class="btn-cancelar" title="Cancelar registro">X</a>
-</div>
-<div class="container">
+
+<div class="container container-sm">
+    <!-- <a href="index.html">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </a> -->
+<div><a href="index.html" class="btn-cancelar" title="Cancelar registro" style="z-index: 999;">X</a></div>
 <header>Registro de usuario</header>
 <div class="progress-bar">
     <div class="paso">
@@ -49,28 +51,32 @@
 <form action="#">
     <div class="pagina movPag">
     <div class="titulo">Información principal</div>
+    <hr>
     <div class="campo">
-        <div class="label">Nombres:</div>
+        <div class="label my-1">Nombres:</div>
         <div><b class="error" id="nombres-error"></b></div>
         <input class="form-control" type="text" id="nombres" placeholder="Nombres">
     </div>
-    <div class="campo">
-        <div class="label">Apellido paterno:</div>
+    <div class="campo mt-3">
+        <div class="label my-1">Apellido paterno:</div>
         <div><b class="error" id="apellido1-error"></b></div>
         <input class="form-control" type="text" id="apellido1" placeholder="Apellido Paterno">
     </div>
+
     <div class="campo sigPag" style="margin-bottom: 12px; padding-top: 20px;">
         <button class="btn btn-primary">Siguiente</button>
     </div>
     </div>
     <div class="pagina movPag">
     <div class="titulo">Datos personales</div>
+    <hr>
     <div class="campo">
-        <div class="label">Fecha nacimiento: <b class="error" id="FechaNac-error"></b></div>
-        <input type="Date" id="FechaNac" max="2010-12-31" value="2010-02-03">
+        <div class="label my-1">Fecha nacimiento:</div>
+        <div><b class="error" id="FechaNac-error"></b></div>
+        <input type="Date" id="FechaNac" max="2010-12-31" value="">
     </div>
-    <div class="campo">
-        <div class="label">Sexo:</div>
+    <div class="campo mt-3">
+        <div class="label my-1">Sexo:</div>
         <div><b class="error" id="sexo-error"></b></div>
         <select class="form-select" name="sexo" id="sexo">
             <option value="-1" disabled selected>Escoge una opción</option>
@@ -87,13 +93,14 @@
     </div>
     <div class="pagina">
     <div class="titulo">Información de contacto</div>
+    <hr>
     <div class="campo">
-        <div class="label">E-mail:</div>
+        <div class="label my-1">E-mail:</div>
         <div><b class="error" id="Email-error"></b></div>
         <input class="form-control" type="text" id="Email" placeholder="E-mail">
     </div>
-    <div class="campo">
-        <div class="label">Numero telefónico:</div>
+    <div class="campo mt-3">
+        <div class="label my-1">Numero telefónico:</div>
         <div><b class="error" id="NumCel-error"></b></div>
         <input class="form-control" type="text" id="NumCel" placeholder="Numero telefonico">
     </div>
@@ -104,18 +111,19 @@
     </div>
     <div class="pagina">
         <div class="titulo">Inicio de sesión</div>
+        <hr>
     <!-- <div class="campo btns"> -->
         <!-- <div class="label"></div> -->
         <!-- <div class="pagina"> -->
             <!-- <div class="fila">
             </div> -->
             <div class="campo">
-                <div class="label">Nombre de usuario:</div>
+                <div class="label my-1">Nombre de usuario:</div>
                 <div><b class="error" id="usuario-error"></b></div>
                 <input class="form-control" type="text" id="usuario" placeholder="Nombre de usuario">
             </div>
-            <div class="campo">
-                <div class="label">Contraseña:</div>
+            <div class="campo mt-3">
+                <div class="label my-1">Contraseña:</div>
                 <div><b class="error" id="Contra-error"></b></div>
            
                 <input class="form-control" type="password" id="Contra" placeholder="Contraseña">

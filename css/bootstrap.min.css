@@ -698,10 +698,13 @@ progress {
     .container,
     .container-lg,
     .container-md,
-    .container-sm,
     .container-xl,
     .container-xxl {
         max-width: 1320px;
+    }
+    .container,
+    .container-sm {
+        max-width: 400px;
     }
 }
 :root {
